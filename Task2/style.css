@@ -1,0 +1,17 @@
+.contentList{
+    color:rgb(55, 55, 60);
+}
+
+.contentList ul li{
+    list-style: none;
+
+}
+
+.contentList ul li a{
+    text-decoration: none;
+    color:rgb(98, 107, 115)
+}
+
+.contentList ul li a:hover{
+    color:#4686be;
+}
