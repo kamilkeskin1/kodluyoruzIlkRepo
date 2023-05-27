@@ -15,3 +15,56 @@
 .contentList ul li a:hover{
     color:#4686be;
 }
+
+/* video-container css özellikleri */
+
+
+
+/* #video-container {
+    width: 400px;
+    height: 215px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+
+  #video-container iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
+
+
+  /* text-container özellikleri */
+
+  .text-container{
+    width: 400px;
+    height: 250px;
+
+  }
+
+  /* 
+  *image-container */
+
+  
+  #image-container {
+    position: absolute;
+    margin-left: 700px
+  }
+  
+  #image-container img {
+    max-width: 300px;
+    height: auto;
+  }
+
+  .tablo th td{
+    width:300px
+  }
+.tablo{
+    position: absolute;
+    left: 715px;
+    width: 290px;
+}
+
+
+
