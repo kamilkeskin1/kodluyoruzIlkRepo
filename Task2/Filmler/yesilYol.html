@@ -1,1 +1,90 @@
-<h1>yeşil Yol</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Task2/style.css">
+    <style>
+        /* Resimlerin ve videonun düzeni */
+        #images-about-the-movie {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .about-the-movie {
+            max-width: 300px;
+            text-align: center;
+        }
+
+        #movie {
+            display: flex;
+            justify-content: center;
+        }
+
+        .video-container {
+            width: 560px;
+            height: 315px;
+        }
+    </style>
+    <title>Yeşil Yol</title>
+</head>
+
+<body>
+    <!-- film hakkında -->
+    <div id="images-about-the-movie">
+        <div class="about-the-movie">
+            <h2>Yeşil Yol (The Green Mile)</h2>
+            <!-- film görseli -->
+            <img src="https://c4.wallpaperflare.com/wallpaper/219/332/24/drama-duncan-green-hanks-wallpaper-preview.jpg"
+                width="300px" alt="">
+        </div>
+
+        <div class="about-the-movie">
+            <img src="https://c4.wallpaperflare.com/wallpaper/379/787/811/drama-green-mile-wallpaper-preview.jpg"
+                width="300px" alt="">
+        </div>
+
+        <div class="about-the-movie">
+            <img src="https://c4.wallpaperflare.com/wallpaper/465/202/512/the-green-mile-tom-hanks-actor-movies-film-stills-hd-wallpaper-preview.jpg"
+                width="300px" alt="">
+        </div>
+
+        <div class="about-the-movie">
+            <img src="https://c4.wallpaperflare.com/wallpaper/602/99/817/the-green-mile-movies-film-stills-green-floor-hd-wallpaper-preview.jpg"
+                width="300px" alt="">
+        </div>
+
+        <div class="about-the-movie">
+            <img src="https://c4.wallpaperflare.com/wallpaper/16/654/543/the-green-mile-wallpaper-preview.jpg"
+                width="300px" alt="">
+        </div>
+
+        <!-- film fragmanı -->
+        <div id="movie">
+            <iframe src="https://www.youtube.com/embed/Ki4haFrqSrw" frameborder="0" allowfullscreen
+                class="video-container"></iframe>
+        </div>
+    </div>
+    <div id="paragraph-container">
+        <p>
+            Konusu: Oldukça iri bir adam olan John Coffey, iki küçük kızı tecavüz ederek öldürmek suçundan idama mahkûm
+            olmuştur. Ürkütücü görünümünün aksine oldukça ince ve karmaşık bir iç dünyası olan John Coffey, bazı doğaüstü
+            güçlere sahiptir. İdam cezası alan mahkûmların bulunduğu hapishanenin infaz odası baş gardiyanı olan Paul
+            Edgecomb'un ona gerçekten suçlu olup olmadığını sorması ile birlikte ikisinin arasında bir diyalog başlar.
+            Bazı ürolojik sorunlardan ötürü hasta olan Paul'un, John Coffey'nin güçleri sayesinde iyileşmesiyle olaylar
+            gelişmeye başlar. Coffey, doğaüstü gücü sayesinde kendi içine çektiği hastalıkları ağzından serbest bırakarak
+            hayatına devam edebilmektedir. Paul'un Coffey hakkındaki düşünceleri, onun bu gücünün farkına varmasıyla tamamen
+            değişmeye başlar. Coffey bu gücü sayesinde mucizeler yaratmaktadır ve Paul, bu mucizenin yaşamaya devam etmesi
+            gerektiğini düşünmektedir.
+        </p>
+    </div>
+    
+</body>
+
+</html>
