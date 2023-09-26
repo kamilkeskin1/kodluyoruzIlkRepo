@@ -4,31 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kodluyoruz</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navbar Start -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Ana Sayfa</a></li>
-                <li><a href="about-us.html">Hakkımızda</a></li>
-                <li><a href="contact.html">İletişim</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Filmler</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Film Türleri
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="aksiyon-filmleri.html">Aksiyon Fimleri</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="bilim-kurgu-filmleri.html">Bilim Kurgu Filmleri</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="romantik-komedi.html">Romantik Komedi Filmleri</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
     </header>
     <!-- Navbar End -->
+    <div class="container mt-3">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../html-learn/kedicik.img/labirent.png.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../html-learn/kedicik.img/yesil-yol.png.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../html-learn/kedicik.img/fight-club.png.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
 
      <!-- Content Start -->
 <!-- section start -->
      <!-- Article Start -->
-     <h2>Birinci Yazı</h2>
-     <img style="width: 450px; height: 250px;" src="https://picsum.photos/200" alt="resim1">
-     <p>Lorem ipsum dolor sit amet.</p>
-     <p>Lorem ipsum dolor sit amet.</p>
-     <p>Mollitia aut et animi alias.</p>
-     <p>Magnam minus aperiam animi quaerat?</p>
-     <p>Delectus amet dolorum assumenda nesciunt.</p>
-     <p>Magnam maxime eius possimus veniam?</p>
+     <h2 class="text-center mt-3">Film Türlerimiz</h2>
+     <p><b  style="color: red;">Aksiyon Filmleri:</b> <br>
+
+        <b>Die Hard (1988)</b> - Yıldızı Bruce Willis olan bu film, teröristlerle dolu bir gökdeleni kurtarma operasyonunu konu alır. <br>
+        <b>Mad Max: Fury Road (2015)</b> - Bu distopik aksiyon filmi, Max'in çılgın bir çeteyle mücadelesini anlatır. <br>
+        <b>John Wick (2014)</b> - Keanu Reeves'in başrolünde olduğu bu film, emekli bir suikastçının geri dönüşünü ve intikamını konu alır. <br>
+        <b>The Dark Knight (2008)</b> - Batman serisinin bu filmi, Heath Ledger'in Joker olarak muhteşem performansını içerir. <br>
+        <b>Gladiator (2000)</b> - Russell Crowe'un başrolünde olduğu bu film, Roma İmparatorluğu'nda gladyatör Maximus'un hikayesini anlatır.</p>
+     <p><b  style="color: red;">Bilim Kurgu Filmleri:</b> <br>
+
+        <b>Star Wars: Episode IV - A New Hope (1977)</b> - Bu bilim kurgu efsanesi, Jedi'ların ve Sith'lerin savaşını anlatır. <br>
+        <b>Blade Runner (1982)</b> - Ridley Scott'ın yönettiği bu film, insan benzeri yapay zekaların varlığını sorgular. <br>
+        <b>Interstellar (2014)</b> - Christopher Nolan'ın yönettiği bu film, uzayda yeni bir yuva arayışını konu alır. <br>
+        <b>The Matrix (1999)</b> - Bu film, gerçeklik ve sanal dünya arasındaki sınırı sorgulayan bir yapay zeka hikayesini anlatır. <br>
+        <b>Inception (2010)</b> - Yine Christopher Nolan'ın bir başka eseri olan bu film, rüyaların içinde rüyalara giren bir hırsız ekibinin hikayesini anlatır.</p>
+     <p><b  style="color: red;">Romantik Komedi Filmleri:</b> <br>
+
+       <b> When Harry Met Sally (1989)</b> - Bu film, iki arkadaşın yıllar içindeki romantik ilişkilerini ve arkadaşlıklarını ele alır. <br>
+       <b> Pretty Woman (1990)</b> - Julia Roberts ve Richard Gere'in başrollerini paylaştığı bu film, bir işadamının bir fahişeye duyduğu aşkı konu alır. <br>
+        <b>The Proposal (2009)</b> - Bu romantik komedi, Kanadalı bir editörün ABD'li patronuyla sahte bir evlilik yapmasını konu alır. <br>
+        <b>10 Things I Hate About You (1999)</b> - Bu film, bir okuldaki karmaşık genç ilişkilerini ele alır ve William Shakespeare'in "The Taming of the Shrew" oyununa dayanır. <br>
+        <b>Crazy, Stupid, Love (2011)</b> - Steve Carell'in başrolünde olduğu bu film, bir adamın boşanma sonrası hayatını ve aşkı bulma çabalarını anlatır.</p>
      <!-- Article End -->
 <!-- section end -->
      <!-- Content End -->
@@ -41,6 +110,6 @@
 
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

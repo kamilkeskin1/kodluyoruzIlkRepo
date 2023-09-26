@@ -1,0 +1,17 @@
+.carousel-inner {
+    max-width: 500px;
+    margin: 0 auto; /* Kartları sayfa ortasına hizalamak için */
+}
+.carousel-item {
+    text-align: center; /* Kart içeriğini yatayda ortalamak için */
+}
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+}
+/* Resimlerin üstünde görünen kontrol düğmeleri için CSS stilini ayarlayın */
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 1; /* Resimlerin önünde görünen düğmeleri ayarlar */
+  width: 50%;
+}
